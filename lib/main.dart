@@ -2,11 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/base/bottom_navbar.dart';
 
 void main() {
-  var myList =[
-    "Flutter",
-    "Laravel",
-    "PHP",
-  ];
   runApp(const MyApp());
 }
 
