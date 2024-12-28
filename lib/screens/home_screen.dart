@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-
 import '../base/res/styles/app_styles.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -13,7 +11,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: ListView(
         children: [
-          Container(
+           Container(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
               children: [
@@ -23,21 +21,21 @@ class HomeScreen extends StatelessWidget {
                    Column(
                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text("Good Morning",style: TextStyle(
-                          fontSize: 17,fontWeight: FontWeight.w500)),
+                        Text("Good Morning", style: AppStyles.headlineStyle3),
                         const SizedBox(
                           height: 5,
                         ),
-                        Text("Book Tickets",style: TextStyle(
-                            fontSize: 26,fontWeight: FontWeight.w500,
-                            color: AppStyles.textColor
-                        ))
+                        Text("Book Tickets",
+                            style: AppStyles.headlineStyle1)
                       ],
                     ),
                     Container(
-                      color: Colors.amber,
-                      width: 100,
-                      height: 70,
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.amber
+                      )
                     )
                   ],
                 ),
